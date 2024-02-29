@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.8.18 on linux)" generated="2024-02-29T14:15:18.072329" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.8.18 on linux)" generated="2024-02-29T14:17:13.408973" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/robot-applitools-tests/robot-applitools-tests/tests">
 <suite id="s1-s1" name="Visual Test 1" source="/home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_1.robot">
 <test id="s1-s1-t1" name="Why Applitools Page" line="10">
 <kw name="Before Visual Tests" owner="common_keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-29T14:15:19.570344" level="INFO">Opening browser 'headless Chrome' to base url 'https://applitools.com/'.</msg>
+<msg time="2024-02-29T14:17:15.121507" level="INFO">Opening browser 'headless Chrome' to base url 'https://applitools.com/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${HEADLESS} ${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-29T14:15:19.569740" elapsed="2.228195"/>
+<status status="PASS" start="2024-02-29T14:17:15.120921" elapsed="2.219513"/>
 </kw>
 <kw name="Eyes Open" owner="EyesLibrary">
 <arg>${TEST_NAME}</arg>
@@ -22,45 +22,45 @@
 <arg>${BATCH_NAME}</arg>
 <tag>Check flow</tag>
 <doc>Shared parameters section from `applitools.yaml` could be overwritten during `Eyes Open` call, see `Preconditions`.</doc>
-<status status="PASS" start="2024-02-29T14:15:21.798752" elapsed="0.625414"/>
+<status status="PASS" start="2024-02-29T14:17:17.341289" elapsed="0.571076"/>
 </kw>
-<status status="PASS" start="2024-02-29T14:15:19.567958" elapsed="2.856586"/>
+<status status="PASS" start="2024-02-29T14:17:15.119003" elapsed="2.793747"/>
 </kw>
 <kw name="Visual Test Page" owner="common_keywords">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-29T14:15:22.426303" level="INFO">Opening url 'https://applitools.com//why-applitools/'</msg>
+<msg time="2024-02-29T14:17:17.914690" level="INFO">Opening url 'https://applitools.com//why-applitools/'</msg>
 <arg>${page}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-29T14:15:22.426012" elapsed="0.869084"/>
+<status status="PASS" start="2024-02-29T14:17:17.914284" elapsed="0.623713"/>
 </kw>
 <kw name="Eyes Check Window" owner="EyesLibrary">
 <tag>Allow to pass Check Settings keywords</tag>
 <tag>Check flow</tag>
 <doc>Check current browser window</doc>
-<status status="PASS" start="2024-02-29T14:15:23.295410" elapsed="2.558526"/>
+<status status="PASS" start="2024-02-29T14:17:18.538332" elapsed="2.571748"/>
 </kw>
 <kw name="Eyes Close Async" owner="EyesLibrary">
 <tag>Check flow</tag>
 <doc>Closes a session and returns the results of the session.
 If a test is running, aborts it. Otherwise, does nothing.</doc>
-<status status="PASS" start="2024-02-29T14:15:25.854435" elapsed="0.012467"/>
+<status status="PASS" start="2024-02-29T14:17:21.110700" elapsed="0.018668"/>
 </kw>
 <arg>${BASE_URL}/why-applitools/</arg>
-<status status="PASS" start="2024-02-29T14:15:22.425230" elapsed="3.441854"/>
+<status status="PASS" start="2024-02-29T14:17:17.913345" elapsed="3.216297"/>
 </kw>
 <kw name="After Visual Tests" owner="common_keywords" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-02-29T14:15:25.867941" elapsed="0.068239"/>
+<status status="PASS" start="2024-02-29T14:17:21.130915" elapsed="0.068078"/>
 </kw>
-<status status="PASS" start="2024-02-29T14:15:25.867507" elapsed="0.068860"/>
+<status status="PASS" start="2024-02-29T14:17:21.130223" elapsed="0.068985"/>
 </kw>
-<status status="PASS" start="2024-02-29T14:15:19.566297" elapsed="6.370173"/>
+<status status="PASS" start="2024-02-29T14:17:15.117190" elapsed="6.082118"/>
 </test>
-<meta name="Applitools TestResults Path">/tmp/tmpithxyje3/EyesTestResults-c29013a7ecd04375b6dca58feea76c53.json</meta>
-<status status="PASS" start="2024-02-29T14:15:18.109473" elapsed="7.828035"/>
+<meta name="Applitools TestResults Path">/tmp/tmp8vyadvsl/EyesTestResults-7dd97bf9acce461793b15c239e7895ea.json</meta>
+<status status="PASS" start="2024-02-29T14:17:13.444026" elapsed="7.756006"/>
 </suite>
-<status status="PASS" start="2024-02-29T14:15:18.080176" elapsed="7.858057"/>
+<status status="PASS" start="2024-02-29T14:17:13.416933" elapsed="7.783821"/>
 </suite>
 <statistics>
 <total>
