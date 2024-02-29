@@ -14,8 +14,8 @@ Tests                                                                 | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
 --- Test error. 
-	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693085019623/00000251693085019521?accountId=3nQbEOBfUkWxe4nbiljqxw__
+	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693084668407/00000251693084668271?accountId=3nQbEOBfUkWxe4nbiljqxw__
 --- Test error. 
-	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693085019623/00000251693085019521?accountId=3nQbEOBfUkWxe4nbiljqxw__
-Output:  /home/runner/work/robot-visual-tests/robot-visual-tests/reports/pabot_results/2/output.xml
-Failed to propagate Eyes check results: Invalid isoformat string: '20240229 14:09:56.149'
+	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693084668407/00000251693084668271?accountId=3nQbEOBfUkWxe4nbiljqxw__
+Output:  /home/runner/work/robot-applitools-tests/robot-applitools-tests/reports/pabot_results/2/output.xml
+Failed to propagate Eyes check results: Invalid isoformat string: '20240229 14:15:44.510'
