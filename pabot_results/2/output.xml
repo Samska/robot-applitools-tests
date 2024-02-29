@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.18 on linux)" generated="2024-02-29T14:09:17.194081" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/runner/work/robot-visual-tests/robot-visual-tests/tests">
+<suite id="s1-s1" name="Visual Test 3" source="/home/runner/work/robot-visual-tests/robot-visual-tests/tests/visual_test_3.robot">
+<test id="s1-s1-t1" name="Eyes Page" line="10">
+<kw name="Before Visual Tests" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-29T14:09:18.915903" level="INFO">Opening browser 'headless Chrome' to base url 'https://applitools.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${HEADLESS} ${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-29T14:09:18.915424" elapsed="12.335499"/>
+</kw>
+<kw name="Eyes Open" owner="EyesLibrary">
+<arg>${TEST_NAME}</arg>
+<arg>${VIEWPORT_SIZE}</arg>
+<arg>${APP_NAME}</arg>
+<arg>${HOST_OS}</arg>
+<arg>${HOST_APP}</arg>
+<arg>${MATCH_LEVEL}</arg>
+<arg>${BASELINE_ENV_NAME}</arg>
+<arg>${BATCH_NAME}</arg>
+<tag>Check flow</tag>
+<doc>Shared parameters section from `applitools.yaml` could be overwritten during `Eyes Open` call, see `Preconditions`.</doc>
+<status status="PASS" start="2024-02-29T14:09:31.251847" elapsed="0.975573"/>
+</kw>
+<status status="PASS" start="2024-02-29T14:09:18.913804" elapsed="13.313978"/>
+</kw>
+<kw name="Visual Test Page" owner="common_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-29T14:09:32.228949" level="INFO">Opening url 'https://applitools.com//platform/eyes/'</msg>
+<arg>${page}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-29T14:09:32.228749" elapsed="0.789182"/>
+</kw>
+<kw name="Eyes Check Window" owner="EyesLibrary">
+<tag>Allow to pass Check Settings keywords</tag>
+<tag>Check flow</tag>
+<doc>Check current browser window</doc>
+<status status="PASS" start="2024-02-29T14:09:33.018346" elapsed="2.853714"/>
+</kw>
+<kw name="Eyes Close Async" owner="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Closes a session and returns the results of the session.
+If a test is running, aborts it. Otherwise, does nothing.</doc>
+<status status="PASS" start="2024-02-29T14:09:35.872437" elapsed="0.003368"/>
+</kw>
+<arg>${BASE_URL}/platform/eyes/</arg>
+<status status="PASS" start="2024-02-29T14:09:32.228219" elapsed="3.647717"/>
+</kw>
+<kw name="After Visual Tests" owner="common_keywords" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-29T14:09:35.876713" elapsed="0.069997"/>
+</kw>
+<status status="PASS" start="2024-02-29T14:09:35.876298" elapsed="0.070612"/>
+</kw>
+<status status="PASS" start="2024-02-29T14:09:18.912547" elapsed="17.034465"/>
+</test>
+<meta name="Applitools TestResults Path">/tmp/tmpyy5m__77/EyesTestResults-6c6e48e372ad4b8c95aaf7dd8e17d882.json</meta>
+<status status="PASS" start="2024-02-29T14:09:17.216117" elapsed="18.731608"/>
+</suite>
+<status status="PASS" start="2024-02-29T14:09:17.199119" elapsed="18.749347"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Visual Test 3">Tests.Visual Test 3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

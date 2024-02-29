@@ -1,0 +1,21 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Running test suite with `web_ufg` runner and `../tests/applitools.yaml` config
+Using library `SeleniumLibrary` as backend
+Tests.Visual Test 3                                                           
+==============================================================================
+Eyes Page                                                             | PASS |
+------------------------------------------------------------------------------
+Tests.Visual Test 3                                                   | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+--- Test error. 
+	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693085019623/00000251693085019521?accountId=3nQbEOBfUkWxe4nbiljqxw__
+--- Test error. 
+	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693085019623/00000251693085019521?accountId=3nQbEOBfUkWxe4nbiljqxw__
+Output:  /home/runner/work/robot-visual-tests/robot-visual-tests/reports/pabot_results/2/output.xml
+Failed to propagate Eyes check results: Invalid isoformat string: '20240229 14:09:56.149'
