@@ -38,4 +38,4 @@ jobs:
 
       - name: Display test report URL
         run: |
-          echo "Test report: https://${{ github.actor }}.github.io/robot-visual-tests/report.html"
+          echo "Test report: https://${{ github.actor }}.github.io/robot-applitools-tests/report.html"
