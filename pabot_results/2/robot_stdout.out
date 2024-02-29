@@ -5,17 +5,56 @@ Running test suite with `web_ufg` runner and `../tests/applitools.yaml` config
 Using library `SeleniumLibrary` as backend
 Tests.Visual Test 3                                                           
 ==============================================================================
-Eyes Page                                                             | PASS |
+Eyes Page                                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_3.robot:10
+    T:  Eyes Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_3.robot:5
+      Before Visual Tests    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/resources/common_keywords.robot:4
+      Eyes Open    ${TEST_NAME}    ${VIEWPORT_SIZE}    ${APP_NAME}    ${HOST_OS}    ${HOST_APP}    ${MATCH_LEVEL}    ${BASELINE_ENV_NAME}    ${BATCH_NAME}
+      |  ${TEST_NAME} = Eyes Page (str)
+      |  ${VIEWPORT_SIZE} =  (str)
+      |  ${APP_NAME} = robot-applitools-tests (str)
+      |  ${HOST_OS} =  (str)
+      |  ${HOST_APP} =  (str)
+      |  ${MATCH_LEVEL} = STRICT (str)
+      |  ${BASELINE_ENV_NAME} =  (str)
+      |  ${BATCH_NAME} = Samska_TEST (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+EyesLibraryError: Failed to run EyesLibrary
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/robotlibcore.py", line 133, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/keywords/session.py", line 145, in open
+    return eyes.open(self.fetch_driver())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/common/eyes.py", line 291, in open
+    self._open(app_name, test_name, viewport_size, driver)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/common/eyes.py", line 220, in _open
+    self._eyes_ref = self._commands.manager_open_eyes(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/common/command_executor.py", line 156, in manager_open_eyes
+    return self._checked_command(context, "EyesManager.openEyes", payload)
+    [ Message content over the limit has been removed. ]
+    at async req2 (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9729:18)
+    at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)
+    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:310:26)
+    at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)
+    at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:55:25)
+    at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)
+    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:94:22)
 ------------------------------------------------------------------------------
-Tests.Visual Test 3                                                   | PASS |
-1 test, 1 passed, 0 failed
+Tests.Visual Test 3                                                   | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests                                                                 | PASS |
-1 test, 1 passed, 0 failed
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
---- Test error. 
-	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693083536037/00000251693083535957?accountId=3nQbEOBfUkWxe4nbiljqxw__
---- Test error. 
-	Server exception Test 'Eyes Page' of 'robot-applitools-tests' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251693083536037/00000251693083535957?accountId=3nQbEOBfUkWxe4nbiljqxw__
 Output:  /home/runner/work/robot-applitools-tests/robot-applitools-tests/reports/pabot_results/2/output.xml
-Failed to propagate Eyes check results: Invalid isoformat string: '20240229 14:34:37.353'
+Failed to propagate Eyes check results: 'Visual Test 3'
