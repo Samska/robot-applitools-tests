@@ -27,3 +27,15 @@ jobs:
       - name: Run the tests
         run: |
           pabot --outputdir reports tests || true
+
+      - name: Publish test report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports/
+          cname: ${{ env.CNAME }}
+          commit_message: Update test report for ${{ github.sha }}
+
+      - name: Display test report URL
+        run: |
+          echo "Test report: https://${{ github.actor }}.github.io/robot-visual-tests/report.html"
