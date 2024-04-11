@@ -31,7 +31,7 @@ EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/robotlibcore.py", line 133, in run_keyword
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/robotlibcore.py", line 173, in run_keyword
     return self.keywords[name](*args, **(kwargs or {}))
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/keywords/session.py", line 145, in open
     return eyes.open(self.fetch_driver())
@@ -44,11 +44,11 @@ Traceback (most recent call last):
     [ Message content over the limit has been removed. ]
     at async req2 (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9729:18)
     at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)
-    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:310:26)
+    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:324:26)
     at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)
     at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:55:25)
     at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)
-    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:94:22)
+    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:96:22)
 ------------------------------------------------------------------------------
 Tests.Visual Test 1                                                   | FAIL |
 1 test, 0 passed, 1 failed
