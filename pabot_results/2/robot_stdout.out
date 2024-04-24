@@ -46,7 +46,7 @@ Traceback (most recent call last):
     at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)
     at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:324:26)
     at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)
-    at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:55:25)
+    at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:56:25)
     at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)
     at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:96:22)
 ------------------------------------------------------------------------------
