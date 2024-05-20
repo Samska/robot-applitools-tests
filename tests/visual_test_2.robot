@@ -15,4 +15,4 @@ ${BATCH_NAME}=      TEST_TEMPLATE_TEST_LEVEL_${APPEND_BATCH_NAME}
 Autonomoues Page
     [Template]     Visual Test Page
     Autonomous Page        ${BASE_URL}/platform/autonomous/
-    Autonomous Page        ${BASE_URL}/solutions/developers/
+    Solutions Page         ${BASE_URL}/solutions/developers/
