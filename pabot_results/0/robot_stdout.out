@@ -3,18 +3,18 @@ Tests
 ==============================================================================
 Running test suite with `web_ufg` runner and `../tests/applitools.yaml` config
 Using library `SeleniumLibrary` as backend
-Tests.Visual Test 1                                                           
+Tests.Visual Test 1 :: Test Template at Suite Level                           
 ==============================================================================
 Why Applitools Page                                                     
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_1.robot:10
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_1.robot:16
     T:  Why Applitools Page    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_1.robot:5
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_1.robot:8
       Before Visual Tests    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/resources/common_keywords.robot:4
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/resources/common_keywords.robot:9
       Eyes Open    ${TEST_NAME}    ${VIEWPORT_SIZE}    ${APP_NAME}    ${HOST_OS}    ${HOST_APP}    ${MATCH_LEVEL}    ${BASELINE_ENV_NAME}    ${BATCH_NAME}
       |  ${TEST_NAME} = Why Applitools Page (str)
       |  ${VIEWPORT_SIZE} =  (str)
@@ -23,7 +23,19 @@ Why Applitools Page
       |  ${HOST_APP} =  (str)
       |  ${MATCH_LEVEL} = STRICT (str)
       |  ${BASELINE_ENV_NAME} =  (str)
-      |  ${BATCH_NAME} = Samska_TEST (str)
+      |  ${BATCH_NAME} = TEST_TEMPLATE_SUITE_LEVEL_20/05/2024 (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_1.robot:16
+    T:  Why Applitools Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_1.robot:9
+      After Visual Tests    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/robot-applitools-tests/robot-applitools-tests/resources/common_keywords.robot:11
+      Eyes Close Async    
 ______________________________________________________________________________
 | FAIL |
 Setup failed:
@@ -44,17 +56,35 @@ Traceback (most recent call last):
     [ Message content over the limit has been removed. ]
     at async req2 (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9729:18)
     at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)
-    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:324:26)
+    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:340:26)
     at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)
     at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:56:25)
     at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)
-    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:96:22)
+    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:97:22)
+
+Also teardown failed:
+EyesLibraryError: Failed to run EyesLibrary
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/robotlibcore.py", line 173, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/keywords/session.py", line 164, in close
+    return self.current_eyes.close_async()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/common/eyes.py", line 391, in close_async
+    return self._close(False, False)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/common/eyes.py", line 233, in _close
+    raise EyesError("Eyes not open")
+applitools.common.errors.EyesError: Eyes not open
 ------------------------------------------------------------------------------
-Tests.Visual Test 1                                                   | FAIL |
-1 test, 0 passed, 1 failed
+Eyes Page                                                             | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+Tests.Visual Test 1 :: Test Template at Suite Level                   | FAIL |
+2 tests, 0 passed, 2 failed
 ==============================================================================
 Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+2 tests, 0 passed, 2 failed
 ==============================================================================
 Output:  /home/runner/work/robot-applitools-tests/robot-applitools-tests/reports/pabot_results/0/output.xml
 Failed to propagate Eyes check results: 'Visual Test 1'
