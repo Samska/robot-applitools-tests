@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.8.18 on linux)" generated="2024-05-20T22:23:16.019003" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.8.18 on linux)" generated="2024-05-20T22:24:19.346186" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/robot-applitools-tests/robot-applitools-tests/tests">
 <suite id="s1-s1" name="Visual Test 2" source="/home/runner/work/robot-applitools-tests/robot-applitools-tests/tests/visual_test_2.robot">
 <test id="s1-s1-t1" name="Autonomoues Page" line="15">
 <kw name="Before Visual Tests" owner="common_keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-20T22:23:17.418569" level="INFO">Opening browser 'headless Chrome' to base url 'https://applitools.com/'.</msg>
+<msg time="2024-05-20T22:24:20.879845" level="INFO">Opening browser 'headless Chrome' to base url 'https://applitools.com/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${HEADLESS} ${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-20T22:23:17.417897" elapsed="3.771322"/>
+<status status="PASS" start="2024-05-20T22:24:20.879384" elapsed="2.938477"/>
 </kw>
 <kw name="Eyes Open" owner="EyesLibrary">
-<msg time="2024-05-20T22:23:21.890570" level="ERROR">Re-raising an error received from SDK server: USDKFailure('Request "getAccountInfo" [0--666ee8d4-fd99-42fe-8deb-03b0c68ec8b6] that was sent to the address "[GET]https://eyesapi.applitools.com/api/sessions/renderinfo?apiKey=%3Capi-key%3E" failed due to unexpected status Unauthorized(401)', '    at Object.afterResponse (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/req-eyes.js:104:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9828:20\n    at async req2 (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9729:18)\n    at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)\n    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:340:26)\n    at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)\n    at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:56:25)\n    at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)\n    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:97:22)')</msg>
-<msg time="2024-05-20T22:23:21.891797" level="FAIL">EyesLibraryError: Failed to run EyesLibrary
+<msg time="2024-05-20T22:24:24.297285" level="ERROR">Re-raising an error received from SDK server: USDKFailure('Request "getAccountInfo" [0--cc57a96f-fcd5-4648-8160-4c6084163466] that was sent to the address "[GET]https://eyesapi.applitools.com/api/sessions/renderinfo?apiKey=%3Capi-key%3E" failed due to unexpected status Unauthorized(401)', '    at Object.afterResponse (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/req-eyes.js:104:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9828:20\n    at async req2 (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9729:18)\n    at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)\n    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:340:26)\n    at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)\n    at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:56:25)\n    at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)\n    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:97:22)')</msg>
+<msg time="2024-05-20T22:24:24.298753" level="FAIL">EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
@@ -31,7 +31,7 @@ Traceback (most recent call last):
     _check_error(response_payload)
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/common/command_executor.py", line 294, in _check_error
     raise usdk_error
-applitools.common.errors.USDKFailure: Request "getAccountInfo" [0--666ee8d4-fd99-42fe-8deb-03b0c68ec8b6] that was sent to the address "[GET]https://eyesapi.applitools.com/api/sessions/renderinfo?apiKey=%3Capi-key%3E" failed due to unexpected status Unauthorized(401)
+applitools.common.errors.USDKFailure: Request "getAccountInfo" [0--cc57a96f-fcd5-4648-8160-4c6084163466] that was sent to the address "[GET]https://eyesapi.applitools.com/api/sessions/renderinfo?apiKey=%3Capi-key%3E" failed due to unexpected status Unauthorized(401)
     at Object.afterResponse (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/req-eyes.js:104:23)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9828:20
@@ -53,7 +53,7 @@ applitools.common.errors.USDKFailure: Request "getAccountInfo" [0--666ee8d4-fd99
 <arg>${BATCH_NAME}</arg>
 <tag>Check flow</tag>
 <doc>Shared parameters section from `applitools.yaml` could be overwritten during `Eyes Open` call, see `Preconditions`.</doc>
-<status status="FAIL" start="2024-05-20T22:23:21.189982" elapsed="0.702145">EyesLibraryError: Failed to run EyesLibrary
+<status status="FAIL" start="2024-05-20T22:24:23.818539" elapsed="0.480458">EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
@@ -76,7 +76,7 @@ Traceback (most recent call last):
     at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)
     at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:97:22)</status>
 </kw>
-<status status="FAIL" start="2024-05-20T22:23:17.415885" elapsed="4.476938">EyesLibraryError: Failed to run EyesLibrary
+<status status="FAIL" start="2024-05-20T22:24:20.878176" elapsed="3.421529">EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
@@ -101,7 +101,7 @@ Traceback (most recent call last):
 </kw>
 <kw name="After Visual Tests" owner="common_keywords" type="TEARDOWN">
 <kw name="Eyes Close Async" owner="EyesLibrary">
-<msg time="2024-05-20T22:23:21.894176" level="FAIL">EyesLibraryError: Failed to run EyesLibrary
+<msg time="2024-05-20T22:24:24.300991" level="FAIL">EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
@@ -118,7 +118,7 @@ applitools.common.errors.EyesError: Eyes not open
 <tag>Check flow</tag>
 <doc>Closes a session and returns the results of the session.
 If a test is running, aborts it. Otherwise, does nothing.</doc>
-<status status="FAIL" start="2024-05-20T22:23:21.893825" elapsed="0.000525">EyesLibraryError: Failed to run EyesLibrary
+<status status="FAIL" start="2024-05-20T22:24:24.300693" elapsed="0.000464">EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
@@ -135,9 +135,9 @@ applitools.common.errors.EyesError: Eyes not open
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="NOT RUN" start="2024-05-20T22:23:21.894572" elapsed="0.000072"/>
+<status status="NOT RUN" start="2024-05-20T22:24:24.301398" elapsed="0.000058"/>
 </kw>
-<status status="FAIL" start="2024-05-20T22:23:21.893316" elapsed="0.001452">EyesLibraryError: Failed to run EyesLibrary
+<status status="FAIL" start="2024-05-20T22:24:24.300209" elapsed="0.001367">EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
@@ -152,7 +152,7 @@ Traceback (most recent call last):
 applitools.common.errors.EyesError: Eyes not open
 </status>
 </kw>
-<status status="FAIL" start="2024-05-20T22:23:17.414121" elapsed="4.480769">Setup failed:
+<status status="FAIL" start="2024-05-20T22:24:20.876892" elapsed="3.424804">Setup failed:
 EyesLibraryError: Failed to run EyesLibrary
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/EyesLibrary/__init__.py", line 266, in run_keyword
@@ -193,10 +193,10 @@ applitools.common.errors.EyesError: Eyes not open
 </status>
 </test>
 <doc>Test Template at Test Case Level</doc>
-<meta name="Applitools TestResults Path">/tmp/tmpz2sbhdah/EyesTestResults-edfd71fdbb9c47f8b2a3db6ec5030dce.json</meta>
-<status status="FAIL" start="2024-05-20T22:23:16.043786" elapsed="5.852069"/>
+<meta name="Applitools TestResults Path">/tmp/tmp_ab0zoii/EyesTestResults-c899ce401a364a7abe34de783bb87e24.json</meta>
+<status status="FAIL" start="2024-05-20T22:24:19.369124" elapsed="4.933258"/>
 </suite>
-<status status="FAIL" start="2024-05-20T22:23:16.026697" elapsed="5.870337"/>
+<status status="FAIL" start="2024-05-20T22:24:19.351305" elapsed="4.951815"/>
 </suite>
 <statistics>
 <total>
@@ -210,7 +210,7 @@ applitools.common.errors.EyesError: Eyes not open
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-20T22:23:16.450498" level="ERROR">Error in file '/home/runner/work/robot-applitools-tests/robot-applitools-tests/resources/common_keywords.robot' on line 4: Importing library '../resources/common_variables.robot' failed: ModuleNotFoundError: No module named '.'
+<msg time="2024-05-20T22:24:19.755590" level="ERROR">Error in file '/home/runner/work/robot-applitools-tests/robot-applitools-tests/resources/common_keywords.robot' on line 4: Importing library '../resources/common_variables.robot' failed: ModuleNotFoundError: No module named '.'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -219,6 +219,6 @@ PYTHONPATH:
   /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8
   /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/lib-dynload
   /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages</msg>
-<msg time="2024-05-20T22:23:21.890570" level="ERROR">Re-raising an error received from SDK server: USDKFailure('Request "getAccountInfo" [0--666ee8d4-fd99-42fe-8deb-03b0c68ec8b6] that was sent to the address "[GET]https://eyesapi.applitools.com/api/sessions/renderinfo?apiKey=%3Capi-key%3E" failed due to unexpected status Unauthorized(401)', '    at Object.afterResponse (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/req-eyes.js:104:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9828:20\n    at async req2 (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9729:18)\n    at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)\n    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:340:26)\n    at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)\n    at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:56:25)\n    at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)\n    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:97:22)')</msg>
+<msg time="2024-05-20T22:24:24.297285" level="ERROR">Re-raising an error received from SDK server: USDKFailure('Request "getAccountInfo" [0--cc57a96f-fcd5-4648-8160-4c6084163466] that was sent to the address "[GET]https://eyesapi.applitools.com/api/sessions/renderinfo?apiKey=%3Capi-key%3E" failed due to unexpected status Unauthorized(401)', '    at Object.afterResponse (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/req-eyes.js:104:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9828:20\n    at async req2 (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9729:18)\n    at async req (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/req/dist/index.cjs:9640:12)\n    at async getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/server/requests.js:340:26)\n    at async Object.getAccountInfo (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/node_modules/@applitools/core-base/dist/get-account-info.js:34:25)\n    at async Object.openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/ufg/open-eyes.js:56:25)\n    at async getTypedEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/get-typed-eyes.js:9:20)\n    at async openEyes (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/applitools/core_universal/bin/core/__sea/dist/open-eyes.js:97:22)')</msg>
 </errors>
 </robot>
